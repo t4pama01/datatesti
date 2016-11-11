@@ -1,0 +1,14 @@
+CREATE DATABASE datatesti;
+
+USE datatesti;
+
+CREATE TABLE tiedot (
+id_tiedot INT PRIMARY KEY auto_increment,
+username VARCHAR(20),
+email VARCHAR(20)
+) Engine=InnoDB;
+
+GRANT ALL ON opisk_t4pama01.* TO 'ci_user'@'localhost' IDENTIFIED BY 'ci_pass';
+
+INSERT INTO tiedot(username,email) VALUES('Testi','Testi.testi@testi.com');
+
